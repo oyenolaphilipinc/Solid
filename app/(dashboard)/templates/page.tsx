@@ -4,7 +4,7 @@ import Card from '@/components/Card/CardDetails'
 const page = () => {
   return (
     <div>
-    <div className="md:flex gap-4 mt-4 ml-4">
+    <div className="md:flex gap-4 mt-4 ml-4 mr-2 md:mr-0">
         <Card
             image="/images/blog/blog-01.png"
             alt="Just an Image"
@@ -27,7 +27,7 @@ const page = () => {
             href="/templates"
         />
     </div>
-    <div className="md:flex gap-4 mt-4 ml-4">
+    <div className="md:flex gap-4 mt-4 ml-4 mr-2 md:mr-0">
         <Card
             image="/images/blog/blog-01.png"
             alt="Just an Image"

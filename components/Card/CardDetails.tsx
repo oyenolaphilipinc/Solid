@@ -12,7 +12,7 @@ const Card = ({ image, title, details, alt, href }) => {
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-gray-700 text-base">{details}</p>
       </div>
-      <div className="px-6 pt-4 pb-2 flex justify-between">
+      <div className="px-6 pt-4 pb-2 flex justify-between gap-2 md:gap-0">
         <Link href={href} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex">
            <IoEye className="h-6 w-6 mr-2"/> Preview
         </Link>
