@@ -4,7 +4,7 @@ import CardDetails from '@/components/Card/CardDetails'
 const page = () => {
   return (
     <div>
-    <div className="md:flex gap-2 mt-4">
+    <div className="md:flex gap-4 mt-4 ml-4">
         <CardDetails 
             image="/images/blog/blog-01.png"
             alt="Just an Image"
@@ -27,8 +27,7 @@ const page = () => {
             href="/templates"
         />
     </div>
-    <div className="flex flex-col md:gap-2 md:flex-row md:mt-4 mb-4">
-        <div className="pb-2">
+    <div className="flex flex-col md:gap-4 md:flex-row md:mt-4 md:ml-4 mb-4">
         <CardDetails 
             image="/images/blog/blog-01.png"
             alt="Just an Image"
@@ -36,8 +35,6 @@ const page = () => {
             details="Go is Saas Business boilerplate and starter kit template dpecifically crafted for SaaS businesses and startups..."
             href="/templates"
         />
-        </div>
-        <div className="pb-2">
         <CardDetails 
             image="/images/blog/blog-01.png"
             alt="Just an Image"
@@ -45,8 +42,6 @@ const page = () => {
             details="Go is Saas Business boilerplate and starter kit template dpecifically crafted for SaaS businesses and startups..."
             href="/templates"
         />
-        </div>
-        <div>
         <CardDetails 
             image="/images/blog/blog-01.png"
             alt="Just an Image"
@@ -54,7 +49,6 @@ const page = () => {
             details="Go is Saas Business boilerplate and starter kit template dpecifically crafted for SaaS businesses and startups..."
             href="/templates"
         />
-        </div>
     </div>
     </div>
   )

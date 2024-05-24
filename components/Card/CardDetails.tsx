@@ -14,7 +14,7 @@ interface CardDetailsProps{
 
 const CardDetails = ({ image, title, details, alt, href}: CardDetailsProps) => {
   return (
-    <Link className="border px-4 pb-3 w-96 md:w-4/12 rounded-md" href={href}>
+    <Link className="xl:border px-6 pb-3 w-96 rounded-md" href={href}>
         <Image 
             src={image}
             alt={alt}
@@ -25,9 +25,9 @@ const CardDetails = ({ image, title, details, alt, href}: CardDetailsProps) => {
         <div className="px-4">
         <h1 className="text-2xl font-bold text-gray-800 inline-block">{title}</h1>
         <p className="mb-2 text-gray-600">{details}</p>
-        <div className="flex justify-center mt-1">
-            <button className="text-md text-gray-800 flex font-bold gap-2 border-t border-r pr-16 pt-1"><FaEye className="h-6 w-6 "/>Preview</button>
-            <button className="text-md text-gray-800 flex font-bold gap-2 border-t pl-16 pt-1"><IoDownload className="h-6 w-6 "/>Download</button>
+        <div className="flex justify-between mt-1">
+            <button className="text-md flex font-bold gap-2 pt-1 border border-white xl:px-4 px-2 py-1 rounded-md bg-slate-900 text-white"><FaEye className="h-6 w-6 "/>Preview</button>
+            <button className="text-md text-white flex font-bold gap-2 pt-1 border border-white xl:px-4 py-1 px-2 rounded-md bg-indigo-700 ml-6"><IoDownload className="h-6 w-6 "/>Download</button>
         </div>
         </div>
     </Link>
