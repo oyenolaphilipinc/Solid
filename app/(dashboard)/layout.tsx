@@ -5,7 +5,14 @@ import { Metadata } from 'next';
 import "../globals.css";
 import Sidebar from '@/components/Layout/Sidebar';
 import Navbar from '@/components/Layout/Navbar';
-import { ThemeProvider } from 'next-themes';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 export const metadata:Metadata = {
   title: 'Dashboard - Solid Templates',
@@ -22,7 +29,7 @@ export default async function DashboardLayout({ children }: { children: ReactNod
 
   return (
     <html lang='en'>
-      <body className='flex'>
+      <body className={`flex ${poppins.className}`}>
         <Sidebar />
         <div className="mx-auto lg:ml-24 w-full">
         <Navbar />

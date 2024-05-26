@@ -28,10 +28,10 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex space-x-3">
-              <Link href="/" className="text-gray-800 hover:text-gray-600 px-3 rounded-md mt-5 text-sm font-medium">
+              <Link href="/dashboard" className="text-gray-800 hover:text-gray-600 px-3 rounded-md mt-5 text-sm font-medium">
                 Home
               </Link>
-              <Link href="/" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
+              <Link href="/templates" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
                 Templates
               </Link>
               <Image 
@@ -56,8 +56,20 @@ const Navbar = () => {
             <Link href="/dashboard" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
               Home
             </Link>
+            <Link href="/free-templates" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
+              Free Templates
+            </Link>
             <Link href="/templates" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
-              Templates
+              Pro Templates
+            </Link>
+            <Link href="/settings" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
+              Settings
+            </Link>
+            <Link href="/profile" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
+              Referral
+            </Link>
+            <Link href="/profile" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
+              Profile
             </Link>
           </div>
         </div>
