@@ -4,6 +4,8 @@ import { createClient } from '@/utlis/supabase/server'
 import { Metadata } from 'next';
 import "../globals.css";
 import Sidebar from '@/components/Layout/Sidebar';
+import Navbar from '@/components/Layout/Navbar';
+import { ThemeProvider } from 'next-themes';
 
 export const metadata:Metadata = {
   title: 'Dashboard - Solid Templates',
@@ -22,7 +24,8 @@ export default async function DashboardLayout({ children }: { children: ReactNod
     <html lang='en'>
       <body className='flex'>
         <Sidebar />
-        <div className="ml-24 w-full">
+        <div className="mx-auto lg:ml-24 w-full">
+        <Navbar />
         {children}
         </div>
       </body>

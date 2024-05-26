@@ -8,7 +8,7 @@ import { HiOutlineShoppingBag } from 'react-icons/hi'
 
 const Sidebar = () => {
   return (
-        <div className='fixed w-20 h-screen p-4 bg-grey-900 border-r-[1px] flex flex-col justify-between'>
+        <div className='hidden lg:block fixed w-20 h-screen p-4 bg-grey-900 border-r-[1px] flex-col justify-between'>
             <div className='flex flex-col items-center'>
                 <Link href='/dashboard'>
                     <div className='bg-purple-800 text-white p-3 rounded-lg inline-block'>
