@@ -4,7 +4,7 @@ import Card from '@/components/Card/CardDetails'
 const page = () => {
   return (
     <div>
-    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen gap-4 mt-2">
+    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen gap-4 mt-20 md:mt-4">
         <Card
             image="/images/blog/blog-01.png"
             alt="Just an Image"
