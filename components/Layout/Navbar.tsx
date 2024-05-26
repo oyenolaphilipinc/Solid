@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
-import ThemeToggler from '../Header/ThemeToggler';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -31,14 +30,20 @@ const Navbar = () => {
               <Link href="/dashboard" className="text-gray-800 hover:text-gray-600 px-3 rounded-md mt-5 text-sm font-medium">
                 Home
               </Link>
-              <Link href="/templates" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
+              <Link href="/free-templates" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
                 Free Templates
               </Link>
               <Link href="/templates" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
                 Pro Templates
               </Link>
-              <Link href="/templates" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
+              <Link href="/settings" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
                 Settings
+              </Link>
+              <Link href="/referral" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
+                Referral
+              </Link>
+              <Link href="/profile" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
+                Profile
               </Link>
               <Image 
                 src={'/images/user/fashion.jpg'}
