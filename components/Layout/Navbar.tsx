@@ -76,7 +76,7 @@ const Navbar = () => {
             <Link href="/settings" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
               Settings
             </Link>
-            <Link href="/profile" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
+            <Link href="/referral" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
               Referral
             </Link>
             <Link href="/profile" className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium">
