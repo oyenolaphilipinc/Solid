@@ -12,7 +12,7 @@ const Settings = () => {
           <p className="text-gray-600 text-center md:text-left">This settings allows you to customise your details</p>
         </div>
         <div className='button mx-auto md:mx-0'>
-          <button className="border border-white ml-6 md:ml-0 bg-gray-900 text-white px-5 md:px-2 text-sm py-3 rounded-md mr-10 flex"><FaRegSave className='w-5 h-5 mr-1' />Save changes</button>
+          <button className="border border-white ml-6 md:ml-0 bg-gray-900 text-white px-5 md:px-2 text-sm py-3 rounded-md mr-10 md:flex hidden"><FaRegSave className='w-5 h-5 mr-1' />Save changes</button>
         </div>
       </div>
       <h1 className="text-xl text-gray-900 mb-4 text-center md:text-left">Personal Information</h1>
@@ -42,6 +42,7 @@ const Settings = () => {
             <label htmlFor='lastname' className="text-gray-900">New Password</label><br/>
             <input type="text" className="border border-gray-400 px-1 py-1 rounded-md outline-none" />
           </div>
+          <button className="border border-white md:ml-0 bg-gray-900 text-white px-2 text-sm py-2 rounded-md md:hidden flex justify-center"><FaRegSave className='w-5 h-5 mr-1' />Save changes</button>
         </div>
         <div className="hidden md:flex profile-image mr-16">
           <div className='alignee'>
