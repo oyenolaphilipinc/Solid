@@ -42,7 +42,7 @@ const Settings = () => {
             <label htmlFor='lastname' className="text-gray-900">New Password</label><br/>
             <input type="text" className="border border-gray-400 px-1 py-1 rounded-md outline-none" />
           </div>
-          <button className="border border-white md:ml-0 bg-gray-900 text-white px-2 text-sm py-2 rounded-md md:hidden flex justify-center"><FaRegSave className='w-5 h-5 mr-1' />Save changes</button>
+          <button className="border border-white md:ml-0 bg-gray-900 text-white px-2 text-sm py-3 rounded-md md:hidden flex justify-center"><FaRegSave className='w-5 h-5 mr-1' />Save changes</button>
         </div>
         <div className="hidden md:flex profile-image mr-16">
           <div className='alignee'>
