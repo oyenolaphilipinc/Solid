@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
+import DropdownUser from './DropdownUser';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -45,13 +46,7 @@ const Navbar = () => {
               <Link href="/profile" className="text-gray-800 hover:text-gray-600 px-3 mt-5 rounded-md text-sm font-medium">
                 Profile
               </Link>
-              <Image 
-                src={'/images/user/fashion.jpg'}
-                width={40}
-                height={40}
-                alt={"Hello"}
-                className="rounded-full mt-2 cursor-pointer"
-              />
+              <DropdownUser />
             </div>
           </div>
           <div className="md:hidden">
