@@ -32,7 +32,7 @@ export default function Home() {
       <CTA />
       <FAQ />
       <Testimonial />
-      <Pricing />
+      <Pricing price="$10" priceId="price_1PMWPqLrTSv2YDKtTU1sug0O" />
       <Contact />
       <Blog />
     </main>

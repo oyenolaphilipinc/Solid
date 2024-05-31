@@ -1,8 +1,35 @@
 "use client";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
+import { loadStripe } from '@stripe/stripe-js';
+import axios from 'axios';
 
-const Pricing = () => {
+type props = {
+  priceId: string;
+  price: string;
+};
+
+const Pricing = ({priceId, price}: props) => {
+  const handleSubmit = async () => {
+    const stripe = await loadStripe(
+      process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY as string
+    );
+    if (!stripe) {
+      return;
+    }
+    try {
+      const response = await axios.post('/api/stripe/checkout', {
+        priceId: priceId
+      });
+      const data = response.data;
+      if (!data.ok) throw new Error('Something went wrong');
+      await stripe.redirectToCheckout({
+        sessionId: data.result.id
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
@@ -34,7 +61,7 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $10{" "}
+                {price}{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
@@ -64,6 +91,7 @@ const Pricing = () => {
               <button
                 aria-label="Get the Plan button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
+                onClick={handleSubmit}
               >
                 <span className="duration-300 group-hover/btn:pr-2">
                   Get the Plan
