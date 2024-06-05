@@ -19,7 +19,7 @@ const Pricing = ({priceId, price}: props) => {
     }
     try {
       const response = await axios.post('/api/stripe/checkout', {
-        priceId: priceId
+        priceId: "price_1PMWPqLrTSv2YDKtTU1sug0O"
       });
       const data = response.data;
       if (!data.ok) throw new Error('Something went wrong');
